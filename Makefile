@@ -6,7 +6,7 @@
 #    By: djareno <djareno@student.42madrid.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/11 13:13:43 by djareno           #+#    #+#              #
-#    Updated: 2025/04/21 15:38:07 by djareno          ###   ########.fr        #
+#    Updated: 2025/08/20 13:00:51 by djareno          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,6 +46,12 @@ SRC = ft_atoi.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
+		ft_char.c \
+		ft_string.c \
+		ft_int.c \
+		ft_hexadecimal.c \
+		ft_unsignedint.c \
+		ft_printf.c \
 
 SRC_BONUS = ft_lstnew_bonus.c \
 				ft_lstadd_front_bonus.c \
