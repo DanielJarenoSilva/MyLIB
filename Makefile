@@ -6,7 +6,7 @@
 #    By: djareno <djareno@student.42madrid.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/11 13:13:43 by djareno           #+#    #+#              #
-#    Updated: 2025/08/20 13:00:51 by djareno          ###   ########.fr        #
+#    Updated: 2025/08/25 13:51:26 by djareno          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,20 +52,18 @@ SRC = ft_atoi.c \
 		ft_hexadecimal.c \
 		ft_unsignedint.c \
 		ft_printf.c \
-
-SRC_BONUS = ft_lstnew_bonus.c \
-				ft_lstadd_front_bonus.c \
-				ft_lstsize_bonus.c \
-				ft_lstlast_bonus.c \
-				ft_lstadd_back_bonus.c \
-				ft_lstdelone_bonus.c \
-				ft_lstclear_bonus.c \
-				ft_lstiter_bonus.c \
-				ft_lstmap_bonus.c \
+		ft_lstnew.c \
+		ft_lstadd_front.c \
+		ft_lstsize.c \
+		ft_lstlast.c \
+		ft_lstadd_back.c \
+		ft_lstdelone.c \
+		ft_lstclear.c \
+		ft_lstiter.c \
+		ft_lstmap.c \
 
 OBJ = $(SRC:.c=.o)
 
-BONUS_OBJ = $(SRC_BONUS:.c=.o)
 
 CC = cc
 
@@ -90,8 +88,5 @@ fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
-
-bonus: $(BONUS_OBJ) $(OBJ)
-	$(AR) $(NAME) $(OBJ) $(BONUS_OBJ)
 
 .PHONY: all clean fclean re bonus
