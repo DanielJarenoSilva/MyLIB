@@ -6,7 +6,7 @@
 /*   By: djareno <djareno@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 16:44:28 by djareno           #+#    #+#             */
-/*   Updated: 2025/08/26 12:37:50 by djareno          ###   ########.fr       */
+/*   Updated: 2025/08/26 13:31:10 by djareno          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,5 +74,6 @@ int				ft_unsignedint(unsigned int n, int cont);
 int				ft_hexadecimal(va_list args, int tipo, int cont);
 int				ft_hexadecimalpointer(va_list args, int cont);
 int				ft_strisnum(char *str);
+void    		ft_lstprintd(t_list  *stack);
 
 #endif

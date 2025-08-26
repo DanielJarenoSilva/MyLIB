@@ -6,7 +6,7 @@
 #    By: djareno <djareno@student.42madrid.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/11 13:13:43 by djareno           #+#    #+#              #
-#    Updated: 2025/08/26 12:37:32 by djareno          ###   ########.fr        #
+#    Updated: 2025/08/26 13:30:34 by djareno          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,6 +62,7 @@ SRC = ft_atoi.c \
 		ft_lstiter.c \
 		ft_lstmap.c \
 		ft_strisnum.c \
+		ft_lstprintd.c \
 
 OBJ = $(SRC:.c=.o)
 
