@@ -1,24 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_strisnum.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: djareno <djareno@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/21 12:22:11 by djareno           #+#    #+#             */
-/*   Updated: 2025/08/26 12:27:23 by djareno          ###   ########.fr       */
+/*   Created: 2025/08/26 12:18:37 by djareno           #+#    #+#             */
+/*   Updated: 2025/08/26 12:37:34 by djareno          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(void*))
+int	ft_strisnum(char *str)
 {
-	if (!lst)
-		return ;
-	while (lst)
+	int	x;
+
+	x = 0;
+	while (str[x])
 	{
-		f(lst->content);
-		lst = lst->next;
+		if (str[x] < 48 || str[x] > 57)
+			return (-1);
+		x++;
 	}
+	return (0);
 }
